@@ -1,4 +1,4 @@
-# MDES: Multimodal Physiological Dataset for Fine-Grained Emotion Recognition
+# MDES: A Large-Scale Multimodal Physiological Dataset for Fine-Grained Emotion Recognition with Adjacent Negative States
 
 ## Overview
 
