@@ -27,7 +27,7 @@ To request access:
 2. Complete the applicant, institution, project, and intended-use information.
 3. Read and sign the data-use terms.
 4. Send the signed application to the contact email listed below.
-5. Applications will be reviewed before access instructions are issued.
+5. Submitted applications will be reviewed, and approved applicants will receive access instructions by email.
 
 **Contact:** [ye.li@siat.ac.cn](mailto:ye.li@siat.ac.cn)
 
