@@ -20,6 +20,10 @@ MDES contains 40 synchronized physiological channels, including:
 
 The channel order is fixed across participants and trials.
 
+The complete channel list and fixed channel order are also provided in:
+
+`metadata/channel_information.csv`
+
 ### EEG channels
 
 | Channel ID | Channel |
