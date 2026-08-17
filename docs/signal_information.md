@@ -110,19 +110,17 @@ of samples may vary across trials.
 
 ## 6. Signal Units
 
-The physical units associated with each modality will be documented in the
-released channel-information file.
+The physical units of the released physiological signals are:
 
 | Modality | Unit |
 |---|---|
-| EEG | To be specified |
-| PPG | To be specified |
-| RSP | To be specified |
-| ECG | To be specified |
-| EOG | To be specified |
-| EMG | To be specified |
-| EDA | To be specified |
-| SKT | To be specified |
-
+| EEG | µV |
+| PPG | V |
+| RSP | V |
+| ECG | mV |
+| EOG | mV |
+| EMG | mV |
+| EDA | µS |
+| SKT | °C |
 The released data should be interpreted according to the units specified in
 the accompanying channel-information file.
