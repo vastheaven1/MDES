@@ -148,7 +148,6 @@ Available information includes:
 
 - video ID;
 - intended emotion category;
-- stimulus duration;
 - video title or description, when available;
 - original source or URL, when available.
 
