@@ -53,12 +53,10 @@ MDES/
 ├── README.md
 ├── access/
 │   └── MDES_Data_Access_Application.pdf
-├── docs/
-│   ├── annotation_information.md
-│   ├── dataset_structure.md
-│   └── signal_information.md
-└── examples/
-    └── example_metadata/
+└── docs/
+    ├── annotation_information.md
+    ├── dataset_structure.md
+    └── signal_information.md
 ```
 
 ## Citation
