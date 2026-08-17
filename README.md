@@ -29,7 +29,7 @@ To request access:
 4. Send the signed application to the contact email listed below.
 5. Applications will be reviewed before access instructions are issued.
 
-**Contact:** [DATASET CONTACT EMAIL]
+**Contact:** ye.li@siat.ac.cn
 
 Please use an institutional email address whenever possible.
 
@@ -68,11 +68,7 @@ The repository structure above may be completed progressively. At minimum, the a
 
 ## Citation
 
-If you use MDES, please cite:
-
-> [Authors]. “MDES: A Large-Scale Multimodal Physiological Dataset for Fine-Grained Emotion Recognition with Adjacent Negative States.” *IEEE Transactions on Affective Computing*, [year].
-
-BibTeX will be added after publication.
+Citation information will be provided after the manuscript is publicly available.
 
 ## Notes on Released Materials
 
