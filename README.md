@@ -19,7 +19,7 @@ The current release is intended for **non-commercial academic research** and is 
 
 ## Data Access
 
-MDES is available to qualified researchers for non-commercial academic use through controlled access.
+MDES is available for non-commercial academic research through a controlled-access application procedure.
 
 To request access:
 
@@ -29,7 +29,7 @@ To request access:
 4. Send the signed application to the contact email listed below.
 5. Applications will be reviewed before access instructions are issued.
 
-**Contact:** ye.li@siat.ac.cn
+**Contact:** [ye.li@siat.ac.cn](mailto:ye.li@siat.ac.cn)
 
 Please use an institutional email address whenever possible.
 
@@ -56,15 +56,9 @@ MDES/
 ├── docs/
 │   ├── dataset_structure.md
 │   └── signal_information.md
-├── code/
-│   ├── feature_extraction/
-│   ├── benchmark_splits/
-│   └── SAGE-Net/
 └── examples/
     └── example_metadata/
 ```
-
-The repository structure above may be completed progressively. At minimum, the access application and basic dataset documentation should be available when the paper is submitted.
 
 ## Citation
 
@@ -76,4 +70,7 @@ The exact files included in an approved release will be described in the access 
 
 ## License / Access Policy
 
-This repository provides documentation, code, and the controlled-access application. Access to the dataset itself is granted only after approval of a signed application. Approval is project-specific and does not authorize redistribution to other individuals or groups.
+This repository provides dataset documentation and the controlled-access application. Access to the dataset itself is granted only after approval of a signed application. Approval is project-specific and does not authorize redistribution to other individuals or groups.
+
+## Code Availability
+The complete preprocessing, feature-extraction, and SAGE-Net implementation will be made publicly available upon acceptance of the manuscript.
