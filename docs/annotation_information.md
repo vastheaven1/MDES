@@ -1,22 +1,38 @@
 # MDES Annotation Information
 
-This document describes the categorical labels and trial-level annotations
-provided with MDES.
+This document describes the trial-level annotations, categorical benchmark
+labels, participant metadata, and stimulus metadata provided with MDES.
 
-## 1. Annotation Organization
+## 1. Trial-Level Annotation Files
 
-Each participant is provided with trial-level annotation information
-corresponding to the 35 emotion-elicitation trials.
+Detailed trial-level annotations are provided separately for each participant.
 
-Participant-specific annotation files use the same anonymized participant IDs
-as the physiological recordings, for example:
+The annotation filename uses the same anonymized participant ID as the
+physiological recordings.
+
+Examples:
 
 - `S003.csv`
 - `S004.csv`
 - `S005.csv`
 
-Trial IDs and video IDs can be used to match annotations to physiological
-recordings.
+Each file contains 35 rows corresponding to the 35 emotion-elicitation trials
+completed by that participant.
+
+Trial IDs and video IDs can be used to match annotations to the corresponding
+physiological recordings.
+
+For example:
+
+`trial01, video09`
+
+corresponds to:
+
+`trial01_video09.mat`
+
+The presentation order was randomized across participants. Therefore,
+`trial01` does not necessarily correspond to the same stimulus video for
+different participants.
 
 ## 2. Five-Class Labels
 
@@ -44,9 +60,9 @@ Negative and Non-negative categories.
 
 The binary label is stored in the `label2` field.
 
-## 4. Full Trial-Level Annotation Fields
+## 4. Trial-Level Annotation Fields
 
-The complete annotation file contains the following fields:
+Each participant-specific annotation file contains the following fields:
 
 | Field | Description |
 |---|---|
@@ -66,18 +82,16 @@ The complete annotation file contains the following fields:
 | `physiological_discomfort` | Physiological discomfort rating |
 | `watched_video` | Prior-exposure information for the stimulus |
 
-## 5. Intended and Participant-Reported Labels
-
 `video_emotion` and `video_label` describe the intended affective category
-assigned to the stimulus.
+of the stimulus.
 
-`emotion` and `label5` describe the participant-level categorical label derived
-from the post-stimulus self-assessment.
+`emotion` and `label5` describe the participant-level categorical label
+derived from the post-stimulus self-assessment.
 
-These two labels are retained separately to support analyses of both stimulus
-intention and participant-reported affective experience.
+These two types of labels are retained separately to support analyses of both
+stimulus intention and participant-reported affective experience.
 
-## 6. Continuous Self-Assessments
+## 5. Continuous Self-Assessments
 
 Participants provided continuous self-ratings for:
 
@@ -89,40 +103,45 @@ Participants provided continuous self-ratings for:
 - Psychological discomfort
 - Physiological discomfort
 
-These continuous ratings are retained in the annotation files in addition to
-the categorical emotion labels.
+These ratings are retained in the participant-specific annotation files in
+addition to the categorical labels.
 
-## 7. Trial and Video Correspondence
+## 6. Participant Metadata
 
-For example:
+Participant-level information is provided in a separate file:
 
-`trial01, video09`
+`participant_information.csv`
 
-corresponds to the physiological recording:
+This file contains one row per participant and uses the same anonymized
+participant IDs as the physiological recordings and annotation files.
 
-`trial01_video09.mat`
+The released participant metadata include de-identified research-relevant
+characteristics such as:
 
-Trial order was randomized across participants. Therefore, `trial01` does not
-necessarily correspond to the same video for different participants.
+- participant ID;
+- sex;
+- age;
+- height;
+- weight;
+- psychology-background information, when available.
 
-## 8. Participant Metadata
+Directly identifying information is not included in the released file.
 
-A separate participant-information file provides de-identified participant
-characteristics used in the dataset analyses.
+## 7. Stimulus Metadata
 
-Only de-identified research-relevant variables are included in the released
-metadata.
+Stimulus-level information is provided in a separate file:
 
-## 9. Stimulus Metadata
+`stimulus_metadata.csv`
 
-A separate stimulus metadata file provides available information for the
-emotion-elicitation videos, including:
+This file contains one row for each of the 35 emotion-elicitation videos.
+
+Available fields include:
 
 - video ID;
-- intended emotion;
+- intended emotion category;
 - stimulus duration;
-- title or description, when available;
-- original source information or URL, when available.
+- video title or description, when available;
+- original source or URL, when available.
 
 For stimuli whose original title or source URL cannot be reliably recovered,
 the corresponding field is marked as `NA`.
