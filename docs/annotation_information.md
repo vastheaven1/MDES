@@ -1,9 +1,13 @@
 # MDES Annotation Information
 
-This document describes the trial-level annotations, categorical benchmark
-labels, participant metadata, and stimulus metadata provided with MDES.
+This document describes the three types of annotation and metadata information
+provided with MDES:
 
-## 1. Trial-Level Annotation Files
+1. participant-specific trial-level annotations;
+2. participant metadata;
+3. stimulus metadata.
+
+## 1. Trial-Level Annotations
 
 Detailed trial-level annotations are provided separately for each participant.
 
@@ -34,7 +38,7 @@ The presentation order was randomized across participants. Therefore,
 `trial01` does not necessarily correspond to the same stimulus video for
 different participants.
 
-## 2. Five-Class Labels
+### 1.1 Five-Class Labels
 
 The five-class emotion-recognition benchmark uses the following label mapping:
 
@@ -48,7 +52,7 @@ The five-class emotion-recognition benchmark uses the following label mapping:
 
 The five-class label is stored in the `label5` field.
 
-## 3. Two-Class Labels
+### 1.2 Two-Class Labels
 
 For the within-subject binary benchmark, the five emotions are grouped into
 Negative and Non-negative categories.
@@ -60,7 +64,7 @@ Negative and Non-negative categories.
 
 The binary label is stored in the `label2` field.
 
-## 4. Trial-Level Annotation Fields
+### 1.3 Annotation Fields
 
 Each participant-specific annotation file contains the following fields:
 
@@ -88,12 +92,13 @@ of the stimulus.
 `emotion` and `label5` describe the participant-level categorical label
 derived from the post-stimulus self-assessment.
 
-These two types of labels are retained separately to support analyses of both
-stimulus intention and participant-reported affective experience.
+The intended stimulus labels and participant-reported labels are retained
+separately.
 
-## 5. Continuous Self-Assessments
+### 1.4 Continuous Self-Assessments
 
-Participants provided continuous self-ratings for:
+The participant-specific annotation files also contain continuous self-ratings
+for:
 
 - Excitement
 - Anxiety
@@ -103,20 +108,21 @@ Participants provided continuous self-ratings for:
 - Psychological discomfort
 - Physiological discomfort
 
-These ratings are retained in the participant-specific annotation files in
-addition to the categorical labels.
+These ratings are retained in addition to the categorical benchmark labels.
 
-## 6. Participant Metadata
+---
+
+## 2. Participant Metadata
 
 Participant-level information is provided in a separate file:
 
 `participant_information.csv`
 
 This file contains one row per participant and uses the same anonymized
-participant IDs as the physiological recordings and annotation files.
+participant IDs as the physiological recordings and trial-level annotation
+files.
 
-The released participant metadata include de-identified research-relevant
-characteristics such as:
+The released participant metadata include:
 
 - participant ID;
 - sex;
@@ -125,9 +131,12 @@ characteristics such as:
 - weight;
 - psychology-background information, when available.
 
-Directly identifying information is not included in the released file.
+Only de-identified research-relevant participant information is included in
+the released file.
 
-## 7. Stimulus Metadata
+---
+
+## 3. Stimulus Metadata
 
 Stimulus-level information is provided in a separate file:
 
@@ -135,7 +144,7 @@ Stimulus-level information is provided in a separate file:
 
 This file contains one row for each of the 35 emotion-elicitation videos.
 
-Available fields include:
+Available information includes:
 
 - video ID;
 - intended emotion category;
