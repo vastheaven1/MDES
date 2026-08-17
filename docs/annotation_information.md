@@ -115,9 +115,9 @@ These ratings are retained in addition to the categorical benchmark labels.
 
 ## 2. Participant Metadata
 
-Participant-level information is provided in a separate file:
+Participant-level metadata are provided in:
 
-`participant_information.csv`
+`metadata/participant_information.csv`
 
 This file contains one row per participant and uses the same anonymized
 participant IDs as the physiological recordings and trial-level annotation
@@ -139,9 +139,9 @@ the released file.
 
 ## 3. Stimulus Metadata
 
-Stimulus-level information is provided in a separate file:
+Stimulus-level metadata are provided in:
 
-`stimulus_metadata.csv`
+`metadata/stimulus_metadata.csv`
 
 This file contains one row for each of the 35 emotion-elicitation videos.
 
