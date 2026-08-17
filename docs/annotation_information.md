@@ -9,10 +9,11 @@ provided with MDES:
 
 ## 1. Trial-Level Annotations
 
-Detailed trial-level annotations are provided separately for each participant.
+Detailed trial-level annotations are provided separately for each participant in:
 
-The annotation filename uses the same anonymized participant ID as the
-physiological recordings.
+`labels/full_annotations/`
+
+The annotation filename uses the same anonymized participant ID as the physiological recordings.
 
 Examples:
 
